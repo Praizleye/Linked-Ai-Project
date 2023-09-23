@@ -28,7 +28,7 @@ const rand1 = generateRandomDuration();
 const rand2 = generateRandomDuration();
 export default function SceneSix() {
   return (
-    <StyleSceneSixContainer>
+    <StyleSceneSixContainer id="timeline">
       <div className="timeline-heading">Timeline</div>
       <div className="timeline-sub-text">
         Here is the breakdown of the time we anticipate

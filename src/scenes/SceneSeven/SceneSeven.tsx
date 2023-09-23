@@ -15,7 +15,7 @@ const rand4 = generateRandomDuration();
 export default function SceneSeven() {
   return (
     <div>
-      <StyleSceneSevenContainer>
+      <StyleSceneSevenContainer id="overview">
         <div className="side-one">
           <img src={images.Medal} alt="medal-image" loading="lazy" />
         </div>

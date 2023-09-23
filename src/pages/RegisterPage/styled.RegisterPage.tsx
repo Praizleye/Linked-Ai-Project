@@ -28,12 +28,6 @@ export const StyleRegisterContainer = styled.div`
     padding-right: 0;
     padding: 0;
   }
-
-  @media ${device.sm} {
-    gap: 4rem;
-    /* padding-bottom: 4rem; */
-    /* background-color: yellow; */
-  }
 `;
 
 export const StyleSideOneContainer = styled.div`
@@ -57,6 +51,8 @@ export const StyleSideTwoContainer = styled.div`
   @media ${device.md} {
     width: 90%;
     padding: 5rem 2.75rem;
+    background: ${({ theme }) => theme.colors.background};
+    box-shadow: none;
   }
   div.side-two__heading {
     div:nth-of-type(1) {
@@ -79,6 +75,9 @@ export const StyleSideTwoContainer = styled.div`
     grid-template-columns: repeat(2, 1fr);
     gap: 1.81rem;
     margin-top: 2rem;
+    @media ${device.md} {
+      grid-template-columns: repeat(1, 1fr);
+    }
     div {
       ${Flexbox};
       flex-direction: column;
@@ -103,7 +102,11 @@ export const StyleSideTwoContainer = styled.div`
         /* padding-right: 2.69rem; */
         outline: none;
         @media ${device.md} {
-          width: 100%;
+          width: 36.5vw;
+          padding-left: 0.5rem;
+        }
+        @media ${device.sm} {
+          width: 75vw;
           padding-left: 0.5rem;
         }
       }

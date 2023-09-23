@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 // import { InView } from "react-intersection-observer";
 import { NavStyle, Bar, MenuBar, NavItemsContainer } from "./styled.Navbar";
-
-// importing assets
+import { Link } from "react-router-dom"; // importing assets
 import { images } from "../../constants";
 
 const Navbar = () => {
@@ -12,10 +11,10 @@ const Navbar = () => {
   const [clickNavBar, setClickNavBar] = useState<boolean>(false); // keep track of whether nav bar is clicked
 
   const navItems = [
-    { label: "timeline", href: "#about" },
-    { label: "Overview", href: "#solutions" },
-    { label: "FAQs", href: "#projects" },
-    { label: "Contact", href: "#services" },
+    { label: "timeline", href: "#timeline" },
+    { label: "Overview", href: "#overview" },
+    { label: "FAQs", href: "#faqs" },
+    // { label: "Contact", href: "#contact" },
     // { label: "Register", href: "#reviews" },
     // { label: "community", href: "#community" },
   ];
@@ -84,7 +83,10 @@ const Navbar = () => {
             </a>
           </li>
         ))}
-        <button>Register</button>
+        <Link to="/contact">Contact</Link>
+        <Link to="/register">
+          <button>Register</button>
+        </Link>
       </ul>
       <NavItemsContainer className="small__screens" clicknav={clickNavBar}>
         {navItems.map((item) => (

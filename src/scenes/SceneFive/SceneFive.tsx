@@ -112,7 +112,7 @@ export default function SceneFive() {
   };
   return (
     <div>
-      <StyleSceneFiveContainer>
+      <StyleSceneFiveContainer id="faqs">
         <div className="questn-illustration">
           <div className="small-bg-illustration">
             <motion.img
