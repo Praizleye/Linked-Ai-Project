@@ -69,7 +69,9 @@ const Navbar = () => {
   return (
     <NavStyle shownav={showNav === true ? 1 : 0}>
       <div>
-        <img src={images.Logo} alt="logo" />
+        <Link to="/">
+          <img src={images.Logo} alt="logo" />
+        </Link>
       </div>
 
       <ul className="big__screens">
@@ -99,7 +101,10 @@ const Navbar = () => {
             </a>
           </li>
         ))}
-        <button>Get Started</button>
+        <Link to="/contact">Contact</Link>
+        <Link to="/register">
+          <button>Register</button>
+        </Link>
       </NavItemsContainer>
 
       <MenuBar
