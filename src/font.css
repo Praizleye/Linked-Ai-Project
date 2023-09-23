@@ -1,0 +1,13 @@
+
+  
+  @font-face {
+    font-family: "ClashBold";
+    src: url("/fonts/Clash-Bold.otf") format("opentype");
+  }
+ 
+  
+  @font-face {
+    font-family: "UnicaOne";
+    src: url("/fonts/UnicaOne-Regular.woff2") format("woff2");
+  }
+ 

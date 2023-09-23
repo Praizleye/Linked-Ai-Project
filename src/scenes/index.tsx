@@ -1,0 +1,10 @@
+export { default as LandingPageScene } from "./LandingPageScene/LandingPageScene";
+export { default as IntroScene } from "./SceneTwo/SceneTwo";
+export { default as RulesGuidelinesScene } from "./SceneThree/SceneThree";
+export { default as JudgingCriteriaScene } from "./SceneFour/SceneFour";
+export { default as FaqScene } from "./SceneFive/SceneFive";
+export { default as TimelineScene } from "./SceneSix/SceneSix";
+export { default as PrizesAndRewardsScene } from "./SceneSeven/SceneSeven";
+export { default as PartnersAndSponsors } from "./SceneEight/SceneEight";
+export { default as PrivacyPolicy } from "./SceneNine/SceneNine";
+export { default as Footer } from "./FooterScene/FooterScene";
