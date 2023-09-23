@@ -10,11 +10,42 @@ export const StyleContactPage = styled.div`
   min-height: 100vh;
   font-weight: ${(props) => props.theme.fontWeight.xBold};
   padding: ${(props) => props.theme.paddings.navPadsXXL};
-  /* border-top: 1px solid ${(props) => props.theme.colors.borderColor}; */
+
+  @media ${device.xl} {
+    padding: ${(props) => props.theme.paddings.navPadsXL};
+    padding-right: 0;
+  }
+  @media ${device.lg} {
+    padding: ${(props) => props.theme.paddings.navPadsL};
+    padding-right: 0;
+  }
+  @media ${device.md} {
+    padding: ${(props) => props.theme.paddings.navPadsMD};
+    flex-direction: column;
+    /* padding-right: 0; */
+    justify-content: center;
+    align-items: center;
+  }
+  @media ${device.sm} {
+    padding: ${(props) => props.theme.paddings.navPadsMD};
+    flex-direction: column;
+    /* padding-right: 0; */
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const StyleSideOne = styled.div`
   font-weight: ${({ theme }) => theme.fontWeight.light};
+  @media ${device.md} {
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  @media ${device.sm} {
+    text-align: left;
+    padding-bottom: 3rem;
+    width: 100%;
+  }
   div.side-one__heading {
     color: #d434fe;
     font-family: ${({ theme }) => theme.fonts.headers};
@@ -46,6 +77,16 @@ export const StyleSideOne = styled.div`
   }
   div.share-socials {
     margin-top: 1rem;
+    @media ${device.md} {
+      ${Flexbox};
+      justify-content: center;
+      align-items: center;
+    }
+    @media ${device.md} {
+      ${Flexbox};
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
     div {
       color: #d434fe;
       /* font-family: ${({ theme }) => theme.fonts.headers}; */
@@ -54,7 +95,10 @@ export const StyleSideOne = styled.div`
       ${Flexbox};
       margin-top: 1rem;
       width: 8rem;
-      /* gap: 0.5rem; */
+
+      @media ${device.md} {
+        margin: 0;
+      }
     }
   }
 `;
@@ -70,6 +114,14 @@ export const StyleSideTwo = styled.div`
   flex-direction: column;
   justify-content: space-evenly;
 
+  @media ${device.md} {
+    width: 26rem;
+  }
+  @media ${device.sm} {
+    background: ${(props) => props.theme.colors.background};
+    box-shadow: none;
+    width: 100%;
+  }
   div.side-two__heading {
     color: #d434fe;
     font-family: ${({ theme }) => theme.fonts.headers};
@@ -78,6 +130,12 @@ export const StyleSideTwo = styled.div`
     font-weight: 600;
     line-height: normal;
     width: 27.3125rem;
+    @media ${device.md} {
+      width: 80%;
+    }
+    @media ${device.sm} {
+      width: 100%;
+    }
   }
 
   form {
@@ -85,6 +143,11 @@ export const StyleSideTwo = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     gap: 2rem;
+    @media ${device.sm} {
+      justify-self: flex-start;
+      align-self: flex-start;
+    }
+    /* width: 100%; */
     input {
       outline: none;
       width: 27.3125rem;
@@ -95,6 +158,9 @@ export const StyleSideTwo = styled.div`
       background: rgba(255, 255, 255, 0.03);
       box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
       padding-left: 1.81rem;
+      @media ${device.md} {
+        width: 20rem;
+      }
     }
     span.onError {
       display: block;

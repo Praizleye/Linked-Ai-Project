@@ -11,6 +11,29 @@ export const StyleRegisterContainer = styled.div`
   font-weight: ${(props) => props.theme.fontWeight.xBold};
   padding: ${(props) => props.theme.paddings.navPadsXXL};
   padding: 0 3rem;
+  @media ${device.xl} {
+    padding: ${(props) => props.theme.paddings.navPadsXL};
+    padding-right: 0;
+  }
+  @media ${device.lg} {
+    padding: ${(props) => props.theme.paddings.navPadsL};
+    padding-right: 0;
+    padding: ${(props) => props.theme.paddings.navPadsMD};
+    flex-direction: column;
+    margin: 4rem 0;
+  }
+  @media ${device.md} {
+    padding: ${(props) => props.theme.paddings.navPadsMD};
+    flex-direction: column;
+    padding-right: 0;
+    padding: 0;
+  }
+
+  @media ${device.sm} {
+    gap: 4rem;
+    /* padding-bottom: 4rem; */
+    /* background-color: yellow; */
+  }
 `;
 
 export const StyleSideOneContainer = styled.div`
@@ -31,6 +54,10 @@ export const StyleSideTwoContainer = styled.div`
   justify-content: space-evenly;
   align-items: flex-start;
   padding: 5rem 5.75rem;
+  @media ${device.md} {
+    width: 90%;
+    padding: 5rem 2.75rem;
+  }
   div.side-two__heading {
     div:nth-of-type(1) {
       color: #d434fe;
@@ -75,6 +102,10 @@ export const StyleSideTwoContainer = styled.div`
         padding-left: 1.69rem;
         /* padding-right: 2.69rem; */
         outline: none;
+        @media ${device.md} {
+          width: 100%;
+          padding-left: 0.5rem;
+        }
       }
       span.onError {
         display: block;

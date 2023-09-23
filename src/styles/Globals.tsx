@@ -1,10 +1,10 @@
-import { createGlobalStyle, ThemeProps, DefaultTheme } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
-type Props = {
-  theme: ThemeProps<DefaultTheme>;
-};
+// type Props = {
+//   theme: ThemeProps<DefaultTheme>;
+// };
 
-export const GlobalStyles = createGlobalStyle<Props>`
+export const GlobalStyles = createGlobalStyle`
   body{
     overflow-x: hidden;
     min-height: 100vh;

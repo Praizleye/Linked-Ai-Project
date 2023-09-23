@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { images } from "../../constants";
 import styled from "styled-components";
 
@@ -9,7 +9,7 @@ interface StarPropsTypes {
   posY?: number;
   valX?: number[];
   valY?: number[];
-  rot: number;
+  rot?: number;
 }
 const StyleAnimatedGlow = styled(motion.div)<StarPropsTypes>`
   position: absolute;
@@ -35,12 +35,13 @@ export default function AnimatedGlow({
   valX,
   valY,
 }: StarPropsTypes) {
-  const AnimateGlow = {
+  const AnimateGlow: Variants = {
     initial: { x: 0, y: 0 },
 
     animate: {
       x: valX,
       y: valY,
+
       transition: {
         duration: 15,
         repeat: Infinity,

@@ -8,8 +8,8 @@ export const generateRandomGlowValues = (max: number, min: number) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
 
-export const valX = [];
-export const valY = [];
+export const valX = [] as number[];
+export const valY = [] as number[];
 export const generateRandomMovement = () => {
   for (let i = 0; i < 10; i++) {
     const genX = generateRandomGlowValues(50, 150) as number;

@@ -4,7 +4,7 @@ import { theme } from "./styles/Theme";
 import { GlobalStyles } from "./styles/Globals";
 import { Navbar } from "./components/index";
 import { ContactPage, HomePage, RegisterPage } from "./pages/index";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (

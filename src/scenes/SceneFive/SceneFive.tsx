@@ -20,7 +20,7 @@ interface faqProps {
   faqItem: FaqItem[];
 }
 
-const faqItems = [
+const faqItems: faqProps["faqItem"] = [
   {
     title: "Can I work on a project I started before the hackathon?",
     content:

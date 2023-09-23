@@ -1,4 +1,3 @@
-import React from "react";
 import { StyleSceneEightContainer } from "./styled.SceneEight";
 import { images } from "../../constants";
 import AnimatedGlow from "../../components/AnimatedAssets/AnimatedGlow";
