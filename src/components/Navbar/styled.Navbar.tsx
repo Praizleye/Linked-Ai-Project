@@ -36,6 +36,19 @@ export const NavStyle = styled.div<ShowNavProps>`
     width: 70%;
     /* background: red; */
     line-height: ${(props) => props.theme.lineHeight.lhSmall};
+    a {
+      text-transform: capitalize;
+      text-decoration: none;
+      color: ${(props) => props.theme.colors.textColor};
+      padding-bottom: 0.5rem;
+      &.active {
+        font-weight: ${(props) => props.theme.fontWeight.bold};
+        border-bottom: 3px solid ${(props) => props.theme.colors.hoverPrimary};
+      }
+      &.inactive {
+        color: ${(props) => props.theme.colors.navInactive};
+      }
+    }
     li {
       padding: ${(props) => props.theme.paddings.navItemPads};
       list-style: none;

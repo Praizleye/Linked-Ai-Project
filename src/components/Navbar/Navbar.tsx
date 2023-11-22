@@ -85,7 +85,7 @@ const Navbar = () => {
             </a>
           </li>
         ))}
-        <Link to="/contact">Contact</Link>
+        <Link to="/contact"> Contact</Link>
         <Link to="/register">
           <button>Register</button>
         </Link>
@@ -99,9 +99,9 @@ const Navbar = () => {
             >
               {item.label}
             </a>
+            <Link to="/contact">Contact</Link>
           </li>
         ))}
-        <Link to="/contact">Contact</Link>
         <Link to="/register">
           <button>Register</button>
         </Link>
